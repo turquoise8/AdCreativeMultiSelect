@@ -1,3 +1,5 @@
+https://rick-morty-multi-select.vercel.app/
+
 ## Running the project
 
 1. Clone the repository
