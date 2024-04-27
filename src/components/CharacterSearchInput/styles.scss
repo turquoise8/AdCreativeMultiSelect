@@ -1,0 +1,54 @@
+@import "../../App.scss";
+
+.character-input-container {
+  width: 50%;
+  height: 45px;
+  padding: 8px 5px;
+  border: 1px solid $borderColor;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.selected-characters-container {
+  display: flex;
+  overflow-x: auto;
+  width: fit-content;
+
+  &::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $scrollbarColor;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: $scrollbarHoverColor;
+    }
+  }
+}
+
+.character-search-input {
+  min-width: 20%;
+  width: fit-content;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.795);
+
+  &:focus {
+    outline: none;
+  }
+}
